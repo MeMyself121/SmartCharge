@@ -25,6 +25,7 @@ if __name__=="__main__":
     #ARIMA Model
     mod = sm.tsa.statespace.SARIMAX(lnserie, trend='n', order=(0, 1, 12), seasonal_order=(0, 1, 1, 168))
     results = mod.fit()
+    forecast=results.predict(start=102, end=114, dynamic=True)
 
 
     Mdl = arima('Constant', 0, 'D', 1, 'MALags', [1, 2, 5, 8, 12], 'SMALags', [168], 'Seasonality', 168);
