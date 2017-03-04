@@ -1,0 +1,6 @@
+[submodule "SmartCharge.git/externals/stats"]
+	path = SmartCharge.git/externals/stats
+	url = git://github.com/statsmodels/statsmodels.git
+[submodule "SmartCharge.git/statsmodels"]
+	path = SmartCharge.git/statsmodels
+	url = https://github.com/statsmodels/statsmodels.git
